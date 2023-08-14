@@ -32,7 +32,13 @@ schema.sql
 
 seed.sql
 
-sever.sql.
+department.js
+
+roles.js
+
+promptUser.js 
+
+utilisedBudget.js
 
 install npm i inquirer@8.2.4
 
