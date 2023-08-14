@@ -38,7 +38,7 @@ const promptUser = () => {
           viewAllEmpByDep();
           break;
         case "View All Employees by Manager":
-          viewAllEmpByMngr();
+          viewAllEmpByMngt();
           break;
         case "Add Employee":
           addEmp();
