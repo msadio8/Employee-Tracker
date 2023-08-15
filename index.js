@@ -8,7 +8,6 @@ const promptUser = () => {
       name: "show choices",
       message: "What would you like to do ?",
       choices: [
-        "View All",
         "View All Employees",
         "View All Employees by Department",
         "View All Employees By Manager",
@@ -19,8 +18,6 @@ const promptUser = () => {
         "View Roles",
         "Add Role",
         "View utilised budget",
-        "Delete Departments",
-        "Delete role",
         "Quit",
       ],
     })
@@ -28,9 +25,6 @@ const promptUser = () => {
     // use switch statement instead of if,else function refer documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch.
     .then((data) => {
       switch (data["show choices"]) {
-        case "View All":
-          viewAll();
-          break;
         case "View All Employees":
           viewAllEmp();
           break;
@@ -46,7 +40,7 @@ const promptUser = () => {
         case "Update Employee Role":
           upEmp();
           break;
-        case "View Department":
+        case "View Departments":
           viewDep();
           break;
         case "Add Department":
@@ -61,15 +55,21 @@ const promptUser = () => {
         case "View utilised budget":
           utilBudget();
           break;
-        case "Delete Departments":
-          delDep();
-          break;
-        case "Delete Role":
-          delRole();
-          break;
         case "Quit":
           break;
       }
     });
 };
-module.exports = { promptUser };
+module.exports = { promptUser }
+const { utilBudget } = require('./lib/utilisedBudget');
+const { viewRoles, addRole } = require('./lib/roles');
+const {
+  viewAllEmp,
+  viewAllEmpByDep,
+  viewAllEmpByMngt,
+  addEmp,
+  upEmp,
+} = require('./lib/employee');
+const { viewDep, addDep } = require('./lib/department');
+
+promptUser()
