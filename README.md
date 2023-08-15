@@ -92,3 +92,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 # Tests
 
 This application won't be deployed please refer to my walthrough video and screeshots
+
+[walthrough🎬](https://drive.google.com/file/d/1sQTharfTWabaVAmUykiVhR4jUW7JfyaZ/view).
+
+![Alt text](<Screenshot 2023-08-15 at 10.55.43 pm.png>)
